@@ -1,0 +1,52 @@
+Source: libfakekey
+Section: libs
+Priority: optional
+Maintainer: Moray Allan <moray@debian.org>
+Uploaders: Thibaut GIRKA <thibaut.girka@gmail.com>
+Build-Depends: debhelper (>= 13~), pkg-config (>= 0.18), doxygen, libxtst-dev
+Standards-Version: 4.5.0
+
+Package: libfakekey0
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: library for converting characters to X key-presses [runtime]
+ libfakekey is a simple library for converting UTF-8 characters into 'fake' X
+ key-presses.
+ .
+ This package contains the libfakekey runtime library.
+
+Package: libfakekey-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libfakekey0 (= ${binary:Version}), libxtst-dev, ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: library for converting characters to X key-presses [development]
+ libfakekey is a simple library for converting UTF-8 characters into 'fake' X
+ key-presses.
+ . 
+ This package contains the libfakekey development files.
+
+Package: libfakekey-doc
+Section: doc
+Architecture: all
+Multi-Arch: foreign
+Suggests: libfakekey-dev
+Depends: ${misc:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: library for converting characters to X key-presses [documentation]
+ libfakekey is a simple library for converting UTF-8 characters into 'fake' X
+ key-presses.
+ . 
+ This package contains the libfakekey documentation.
+
+Package: libfakekey0-udeb
+Section: debian-installer
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Package-Type: udeb
+Description: library for converting characters to X key-presses [runtime]
+ This is a udeb, or a microdeb, for the debian-installer.
+

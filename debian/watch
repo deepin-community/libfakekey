@@ -1,0 +1,3 @@
+version=4
+opts="mode=git" git://git.yoctoproject.org/libfakekey \
+  refs/tags/([\d\.]+) debian uupdate

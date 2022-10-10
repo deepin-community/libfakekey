@@ -1,0 +1,9 @@
+Document: libfakekey
+Title: libfakekey documentation
+Author: Matthew Allum
+Abstract: This manual describes how to use the libfakekey library.
+Section: Programming/C
+
+Format: HTML
+Index: /usr/share/doc/libfakekey0/html/index.html
+Files: /usr/share/doc/libfakekey0/html/*.html

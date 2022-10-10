@@ -1,0 +1,12 @@
+Description: link against libX11 to fix build
+Index: libfakekey-0.3+git20170516/tests/Makefile.am
+===================================================================
+--- libfakekey-0.3+git20170516.orig/tests/Makefile.am	2020-06-16 12:13:19.973218230 +0100
++++ libfakekey-0.3+git20170516/tests/Makefile.am	2020-06-16 12:13:40.201204670 +0100
+@@ -2,4 +2,5 @@
+ 
+ noinst_PROGRAMS=fakekey-test
+ 
+-fakekey_test_LDADD=../src/libfakekey.la $(FAKEKEY_LIBS)
++fakekey_test_LDADD=../src/libfakekey.la $(FAKEKEY_LIBS) -lX11
++

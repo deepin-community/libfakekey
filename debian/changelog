@@ -1,0 +1,92 @@
+libfakekey (0.3+git20170516-2) unstable; urgency=medium
+
+  * Update debian/not-installed with wildcard.
+
+ -- Moray Allan <moray@debian.org>  Mon, 22 Jun 2020 13:53:41 +0100
+
+libfakekey (0.3+git20170516-1) unstable; urgency=medium
+
+  * New upstream release from Yocto Project git.
+  * Update watch file.
+  * Move installed documentation to /usr/share/doc/libfakekey0/.
+  * Enable bindnow and fortify hardening options.
+
+ -- Moray Allan <moray@debian.org>  Tue, 16 Jun 2020 12:11:51 +0100
+
+libfakekey (0.1-10) unstable; urgency=medium
+
+  * Update standards version.
+  * Move to debhelper compatibility level 11.
+
+ -- Moray Allan <moray@debian.org>  Wed, 24 Oct 2018 18:24:50 +0100
+
+libfakekey (0.1-9) unstable; urgency=low
+
+  * Register documentation with doc-base.
+  * Update standards version.
+
+ -- Moray Allan <moray@debian.org>  Wed, 16 Mar 2016 13:01:30 +0000
+
+libfakekey (0.1-8.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Fix "FTBFS: ld: fakekey-test.o: undefined reference to symbol
+    'XOpenDisplay'": take fix from Ubuntu / Daniel T Chen:
+    extend existing patch 10-fix-build: link against missing -lX11.
+    (Closes: #713559)
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 03 Nov 2013 15:43:47 +0100
+
+libfakekey (0.1-8) unstable; urgency=low
+
+  * Fix -doc package short description.  Closes: #697051.
+  * Changed XC-Package-Type field name to Package-Type in debian/control.
+
+ -- Moray Allan <moray@debian.org>  Sun, 03 Mar 2013 20:35:45 +0000
+
+libfakekey (0.1-7) unstable; urgency=low
+
+  * Split documentation to -doc package.  Closes: #669995.
+
+ -- Moray Allan <moray@debian.org>  Mon, 14 May 2012 10:53:59 +0100
+
+libfakekey (0.1-6) unstable; urgency=low
+
+  * Remember to add automatically-generated Pre-Depends.
+
+ -- Moray Allan <moray@debian.org>  Wed, 21 Mar 2012 18:35:00 +0000
+
+libfakekey (0.1-5) unstable; urgency=low
+
+  * Move to dh 9.
+  * Use dh_autoreconf.
+  * Change to 3.0 (quilt) source format.
+  * Enable multiarch support.
+
+ -- Moray Allan <moray@debian.org>  Wed, 21 Mar 2012 16:33:51 +0000
+
+libfakekey (0.1-4) unstable; urgency=low
+
+  * Move from cdbs to dh for building package.
+
+ -- Moray Allan <moray@debian.org>  Tue, 31 Jan 2012 19:18:15 +0000
+
+libfakekey (0.1-3) unstable; urgency=low
+
+  * Merge LDADD patch by Matthias Klose <doko@ubuntu.com>.
+  * Update standards version.
+
+ -- Moray Allan <moray@debian.org>  Sat, 07 May 2011 18:50:18 +0100
+
+libfakekey (0.1-2) unstable; urgency=low
+
+  * Provide udeb: patch from Thibaut Girka.  Closes: #592505.
+  * Add Thibaut as an uploader.
+
+ -- Moray Allan <moray@debian.org>  Wed, 18 Aug 2010 01:10:50 +0200
+
+libfakekey (0.1-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Moray Allan <moray@debian.org>  Sat, 15 Apr 2006 17:32:30 +0100
